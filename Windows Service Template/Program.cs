@@ -29,15 +29,6 @@ namespace Windows_Service_Template
 
       int exitCodeValue = (int)Convert.ChangeType(exitCode, exitCode.GetTypeCode());
       Environment.ExitCode = exitCodeValue;
-
-      // Install Service:
-        // Copy files in bin/debug to a permanent folder
-        // Open terminal, as administrator, on that folder
-        // Run FileName.exe intall start
-      // Uninstall Service:
-        // Open folder where files are
-        // Open terminal, as administrator, on that folder
-        // Run FileName.exe uninstall
     }
   }
 }
